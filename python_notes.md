@@ -191,8 +191,8 @@ print(users)	# "+11111111": "Tom", "+33333333": "Bob", "+55555555": "Alice", "+2
 
 ### Создание базы и подготовка к внесению изменений.
 ```sql
-base = swlite3.connect(new.db)
-cur = base.connect()
+base = swlite3.connect('my_database.db')
+cur = base.cursor()
 ```
 ### Создание таблицы.
 ```sql
