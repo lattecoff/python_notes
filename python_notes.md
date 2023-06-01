@@ -196,8 +196,7 @@ cur = base.cursor()
 ```
 ### Создание таблицы.
 ```sql
-base.execute('CREATE TABLE OF NOT EXISTS {}(login, password)'.format('data '))
-base.commit()
+base.execute( 'CREATE TABLE IF NOT EXISTS {} (login, password)' .format('data_members') ).base.commit()
 ```
 
 ### Создание SQL-запроса c защитой от SQL-иньекций.
